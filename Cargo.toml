@@ -1,0 +1,13 @@
+[package]
+name = "markdown_pdf_exporter"
+version = "0.1.0"
+authors = ["Maximilian Schoenenberg <max.schoenenberg@me.com>"]
+edition = "2018"
+description = "Takes a Markdown file and converts it into a PDF."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+comrak = "0.7.0"
+wkhtmltopdf = "0.3.0"
+clap = "2.33.0"
