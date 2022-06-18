@@ -14,8 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install wget && wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
-      sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
+      run: |
+        sudo apt-get update && \
+        sudo apt-get install wget && \
+        wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb && \
+        sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
     - name: Build
       run: cargo build --verbose
     - name: Run tests
