@@ -8,6 +8,6 @@ description = "Takes a Markdown file and converts it into a PDF."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-comrak = "0.7.0"
+comrak = "0.17.0"
 wkhtmltopdf = "0.3.0"
 clap = "2.33.0"
